@@ -19,13 +19,13 @@ console.log(awesomeThoughts);
 console.log(funThoughts);
 $("#main").append(funThoughts);*/
 
-var formattedName = HTMLheaderName.replace("%data%", "James Williams");
+/* var formattedName = HTMLheaderName.replace("%data%", "James Williams");
  $("#header").prepend(formattedName);
  var formattedRole = HTMLheaderRole.replace("%data%", "Front-end-developer");
- $("#header").prepend(formattedRole); 
+ $("#header").prepend(formattedRole); */
 
 
-/* var bio = {
+var bio = {
 	"name" : "James",
 	"role" : "Front-end-developer",
 	"contactInfo": {
@@ -59,7 +59,7 @@ var education = {
 work.position = "Front-end-developer";
 work.employer = "5 Guys";
 work.years = 0.4;
-work.city = "Denver"; */
+work.city = "Denver"; 
 
 
 
