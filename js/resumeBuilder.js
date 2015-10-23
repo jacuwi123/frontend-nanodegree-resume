@@ -173,6 +173,9 @@ for (job in work.jobs) {
 	var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 	$(".work-entry:last").append(formattedDates);
 
+	var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+	$(".work-entry:last").append(formattedWorkLocation);
+
 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 	$(".work-entry:last").append(formattedDescription);
 }
