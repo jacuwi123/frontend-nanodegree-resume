@@ -192,6 +192,8 @@ function inName(name) {
 }
 
 $('#main').append(internationalizeButton);
+$('#mapDiv').append(googleMap);
+
 
 projects.display = function() {
 	for (project in projects.projects) {
