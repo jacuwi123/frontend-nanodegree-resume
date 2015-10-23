@@ -53,8 +53,9 @@ var formattedGithub = HTMLgithub.replace("%data%", "Jacuwi123");
 $("#topContacts").append(formattedGithub);
 var formattedLocation = HTMLlocation.replace("%data%", "Denver, CO");
 $("#topContacts").append(formattedLocation);
-var formattedBioPic = HTMLbioPic.replace("%data%", "images/197x148.gif");
-$("#main").append(formattedBioPic);
+/*var formattedBioPic = HTMLbioPic.replace("%data%", "images/197x148.gif");
+$("#main").prepend(formattedBioPic);*/
+
 
 
 var bio = {
@@ -127,3 +128,25 @@ var bio = {
  		}
  	]
  }
+
+if(bio.skills.length > 0) {
+
+	$("#header").append(HTMLskillsStart);
+
+	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+	$("#skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+	$("#skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+	$("#skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+	$("#skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
+	$("#skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
+	$("#skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[6]);
+	$("skills").append(formattedSkill);
+		formattedSkill = HTMLskills.replace("%data%", bio.skills[7]);
+
+}
