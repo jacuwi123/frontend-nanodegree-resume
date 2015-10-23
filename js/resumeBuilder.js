@@ -106,16 +106,26 @@ var bio = {
  	"jobs": [
  		{
  			"employer": "Buff Bros Inc.",
- 			"title": [ "Prep/Line Cook", "Assistant Kitchen Manager", "Kitchen Manager" ],
+ 			"title": "Kitchen Manager",
+ 			"location": "Littleton, CO",
  			"dates": "April 2005 through January 2007",
  			"description": "Maintained constant food quality and presentation, Expertly estimated staffing needs and adjusted hourly schedules in accordance with demand patterns, and budget. Provided courteous and informative customer service."
  		},
  		{
  			"employer": "Lil Pub Company",
  			"title": "Kitchen Manager",
+ 			"location": "Denver, CO",
  			"dates": "September 2006 through October 2008",
  			"description": "Maintained constant food quality and presentation, Expertly estimated staffing needs and adjusted hourly schedules in accordance with demand patterns, and budget. Provided courteous and informative customer service."
+ 		},
+ 		{
+ 			"employer": "Startek",
+ 			"title": "Collection Service Reprsentative",
+ 			"location": "Grand Junction, CO",
+ 			"dates": "November 2013 through March 2014",
+ 			"description": "Collected money owed from customers that called in to pay, Upgraded services, General Customer service."
  		}
+
  	]
  }
 
@@ -160,4 +170,5 @@ for (job in work.jobs) {
 
 	$(".work-entry:last").append(formattedEmployerTitle);
 }
+
 
