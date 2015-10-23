@@ -40,9 +40,19 @@ var newEmail =
 
 
  var formattedName = HTMLheaderName.replace("%data%", "James Williams");
-$("#header").append(formattedName);
+$("#header").prepend(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", "Front-end-Web-development");
-$("#header").append(formattedRole); 
+$("#header").prepend(formattedRole); 
+var formattedMobile = HTMLmobile.replace("%data%", "970-773-3746");
+$("#topContacts").append(formattedMobile);
+var formattedEmail = HTMLemail.replace("%data%", "jacuwi123@gmail.com");
+$("#topContacts").append(formattedEmail);
+var formattedTwitter = HTMLtwitter.replace("%data%", "@jacuwi_123");
+$("#topContacts").append(formattedTwitter);
+var formattedGithub = HTMLgithub.replace("%data%", "Jacuwi123");
+$("#topContacts").append(formattedGithub);
+var formattedLocation = HTMLlocation.replace("%data%", "Denver, CO");
+$("#topContacts").append(formattedLocation);
 
 
 var bio = {
