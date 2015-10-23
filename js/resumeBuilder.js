@@ -53,6 +53,8 @@ var formattedGithub = HTMLgithub.replace("%data%", "Jacuwi123");
 $("#topContacts").append(formattedGithub);
 var formattedLocation = HTMLlocation.replace("%data%", "Denver, CO");
 $("#topContacts").append(formattedLocation);
+var formattedBioPic = HTMLbioPic.replace("%data%", "images/197x148.gif");
+$("#main").append(formattedBioPic);
 
 
 var bio = {
