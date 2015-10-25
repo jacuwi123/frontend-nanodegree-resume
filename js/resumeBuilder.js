@@ -77,12 +77,12 @@ var bio = {
  	"schools": [
  	{
  		"name": "Western State College",
- 		"city": "Gunnison, CO",
+ 		"location": "Gunnison, CO",
  		"major": "English"
  	},
  	{
  		"name": "Colorado Mesa University",
- 		"city": "Grand Junction, CO",
+ 		"location": "Grand Junction, CO",
  		"major": "English"
  	}
 ],

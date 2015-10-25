@@ -126,21 +126,21 @@ function initializeMap() {
   function locationFinder() {
 
     // initializes an empty array
-    var locations = [];
+    var location = [];
 
     // adds the single location property from bio to the locations array
-    locations.push(bio.contacts.location);
+    location.push(bio.contactInfo.location);
 
     // iterates through school locations and appends each location to
     // the locations array
     for (var school in education.schools) {
-      locations.push(education.schools[school].location);
+      location.push(education.schools[school].location);
     }
 
     // iterates through work locations and appends each location to
     // the locations array
     for (var job in work.jobs) {
-      locations.push(work.jobs[job].location);
+      location.push(work.jobs[job].location);
     }
 
     return locations();
@@ -225,7 +225,7 @@ function initializeMap() {
   window.mapBounds = new google.maps.LatLngBounds();
 
   // locations is an array of location strings returned from locationFinder()
-  locations = locationFinder();
+  location = locationFinder();
 
   // pinPoster(locations) creates pins on the map for each location in
   // the locations array
@@ -238,11 +238,11 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
  //Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 
  //Vanilla JS way to listen for resizing of the window
  //and adjust map bounds
-//window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
-  //map.fitBounds(mapBounds);
-//});
+  map.fitBounds(mapBounds);
+});
