@@ -143,7 +143,7 @@ function initializeMap() {
       location.push(work.jobs[job].location);
     }
 
-    return location();
+    return locationFinder();
   }
 
   /*
