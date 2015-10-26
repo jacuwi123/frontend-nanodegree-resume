@@ -225,7 +225,7 @@ function initializeMap() {
   window.mapBounds = new google.maps.LatLngBounds();
 
   // locations is an array of location strings returned from locationFinder()
-  location = locationFinder();
+  locations = locationFinder();
 
   // pinPoster(locations) creates pins on the map for each location in
   // the locations array
