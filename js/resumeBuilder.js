@@ -1,9 +1,9 @@
 
 
  var formattedName = HTMLheaderName.replace("%data%", "James Williams");
-$("#header").prepend(formattedName);
-var formattedRole = HTMLheaderRole.replace("%data%", "Front-end-Web-development");
-$("#header").prepend(formattedRole); 
+$("#header").append(formattedName);
+var formattedRole = HTMLheaderRole.replace("%data%", "Front-end-Web-developer");
+$("#header").append(formattedRole); 
 var formattedMobile = HTMLmobile.replace("%data%", "970-773-3746");
 $("#topContacts").append(formattedMobile);
 var formattedEmail = HTMLemail.replace("%data%", "jacuwi123@gmail.com");
@@ -17,7 +17,7 @@ $("#topContacts").append(formattedLocation);
 var formattedBioPic = HTMLbioPic.replace("%data%", "images/mypic.jpg");
 $("#main").prepend(formattedBioPic);
 var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", "Grow with every opportunity provided me while remaining positive and motivated.");
-$("#main").append(formattedWelcomeMsg);
+$("#main").prepend(formattedWelcomeMsg);
 
 
 
