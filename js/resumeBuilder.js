@@ -1,42 +1,3 @@
-/*var age = 31;
-var firstName = "James"
-console.log(firstName);*/
-//var awesomeThoughts = "I am James and I am awesome!";
-//console.log(awesomeThoughts);
-
-// $("#main").append("James");
-// [string].replace([old], [new]);
-
-/*var email = "jacuwi123@gmail.com";
-var newEmail =
-	email.replace("gmail", "yahoo");
-
-console.log(email);
-console.log(newEmail);*/
-
-/*var funThoughts = awesomeThoughts.replace("awesome", "FUN");
-console.log(awesomeThoughts);
-/*var age = 31;
-var firstName = "James"
-console.log(firstName);*/
-//var awesomeThoughts = "I am James and I am awesome!";
-//console.log(awesomeThoughts);
-
-// $("#main").append("James");
-// [string].replace([old], [new]);
-
-/*var email = "jacuwi123@gmail.com";
-var newEmail =
-	email.replace("gmail", "yahoo");*/
-
-
-//var formattedName = HTMLheaderName.replace("%data%", "James Williams");
-// $("#header").prepend(formattedName);
-// var formattedRole = HTMLheaderRole.replace("%data%", "Front-end-developer");
-// $("#header").prepend(formattedRole);
-
-
-
 
 
  var formattedName = HTMLheaderName.replace("%data%", "James Williams");
@@ -53,8 +14,11 @@ var formattedGithub = HTMLgithub.replace("%data%", "Jacuwi123");
 $("#topContacts").append(formattedGithub);
 var formattedLocation = HTMLlocation.replace("%data%", "Denver, CO");
 $("#topContacts").append(formattedLocation);
-/*var formattedBioPic = HTMLbioPic.replace("%data%", "images/197x148.gif");
-$("#main").prepend(formattedBioPic);*/
+var formattedBioPic = HTMLbioPic.replace("%data%", "images/mypic.jpg");
+$("#main").prepend(formattedBioPic);
+var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", "Grow with every opportunity provided me while remaining positive and motivated.");
+$("#main").append(formattedWelcomeMsg);
+
 
 
 
@@ -67,7 +31,7 @@ var bio = {
 		"github": "jacuwi123",
 		"location": "Denver, CO"
 },
-	"welcomeMessage": "Grow with every opportunity provided me while remaining motivated positive and energetic.",
+	"welcomeMessage": "Grow with every opportunity provided me while remaining motivated positive and motivated.",
 	"skills": [
 		"Data Entry", "Time Management", "Microsoft Word & Excel", "Inventory Management", "High Volume Production", "Cost Controll", "Basic HTML/CSS", "Microsoft Office" 
 	]
