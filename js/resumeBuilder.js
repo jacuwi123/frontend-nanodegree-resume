@@ -1,7 +1,7 @@
 
 
- var formattedName = HTMLheaderName.replace("%data%", "James Williams");
-$("#header").append(formattedName);
+var formattedName = HTMLheaderName.replace("%data%", "James Williams");
+	$("#header").append(formattedName);
 var formattedRole = HTMLheaderRole.replace("%data%", "Front-end-Web-developer");
 $("#header").append(formattedRole); 
 var formattedMobile = HTMLmobile.replace("%data%", "970-773-3746");
@@ -23,6 +23,7 @@ $("#main").prepend(formattedWelcomeMsg);
 
 
 
+
 var bio = {
 	"name" : "James Williams",
 	"role": "Front-end-Web-development",
@@ -35,8 +36,9 @@ var bio = {
 	"welcomeMessage": "Grow with every opportunity provided me while remaining motivated positive and motivated.",
 	"skills": [
 		"Data Entry", "Time Management", "Microsoft Word & Excel", "Inventory Management", "High Volume Production", "Cost Controll", "Basic HTML/CSS", "Microsoft Office" 
-	]
-} 
+	],
+	"bioPic": "images/mypic.jpg"
+}; 
 
  var education = {
  	"schools": [
@@ -65,7 +67,7 @@ var bio = {
  		"url": "https://www.udacity.com"
  		}
  	]
- }
+ };
 
  var work = {
  	"jobs": [
@@ -92,7 +94,7 @@ var bio = {
  		}
 
  	]
- }
+ };
 
  var projects = {
  	"projects": [
@@ -102,7 +104,7 @@ var bio = {
  			"description": "Built a portfolio site using basic HTML and CSS"
  		}
  	]
- }
+ };
 
 if(bio.skills.length > 0) {
 
@@ -126,7 +128,7 @@ if(bio.skills.length > 0) {
 
 }
 function displayWork() {
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
@@ -161,7 +163,7 @@ $('#mapDiv').append(googleMap);
 
 
 projects.display = function() {
-	for (project in projects.projects) {
+	for (var project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -175,5 +177,5 @@ projects.display = function() {
 
 		
 	}
-}		
+};		
 projects.display();
